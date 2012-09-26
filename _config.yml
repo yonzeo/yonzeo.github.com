@@ -6,13 +6,12 @@ paginate:         6
 permalink:        /:title
 
 title:            Yonzeo
-url:              http://zhengyangyang.cn
+url:              http://www.zhengyangyang.cn
 feed:             /atom.xml
 author:
     name:         Yonzeo
-    twitter:      twitter.com/beiyuu
 description:      "Yonzeo\'s Blog"
-author_info:      <a href="http://yonzeo.cn/about">Yonzeo</a>
+author_info:      <a href="http://www.zhengyangyang.cn/about">Yonzeo</a>
 
 copyright:
-    - Design by <a href="http://zhengyangyang.cn/about" title="Yonzeo" target="_blank">Yonzeo</a> &copy; Copyright 2012
+    - Design by <a href="http://www.zhengyangyang.cn/about" title="Yonzeo" target="_blank">Yonzeo</a> &copy; Copyright 2012

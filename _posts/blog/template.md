@@ -12,5 +12,6 @@ category: blog
 
 
 
-[BeiYuu]:    http://beiyuu.com  "BeiYuu"
+
+[Yonzeo]:    http://beiyuu.com  "Yonzeo"
 [1]:    {{ page.url}}  ({{ page.title }})
