@@ -46,6 +46,7 @@ layout: page
                 }else if ($(element).has('img').length){ 
                 }else{
                     $(this).attr('target','_blank');
+		    $(this).attr('ref','nofollow external');
                     $(this).addClass('external');
                 }
             }
