@@ -39,16 +39,14 @@ layout: page
         });
 
         $('.entry a').each(function(index,element){
-            var href = element.attr('href');
-		alert(href);
-		alert(element);
+            var href = $(this).attr('href');
             if(href){
                 if(href.indexOf('#') == 0){
                 }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('www.zhengyangyang.cn')>-1 ){
-             /**   }else if ($(element).has('img').length){ **/
+                }else if ($(element).has('img').length){ 
                 }else{
-                    element.attr('target','_blank');
-                    element.addClass('external');
+                    $(this).attr('target','_blank');
+                    $(this).addClass('external');
                 }
             }
         });
