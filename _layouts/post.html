@@ -40,6 +40,8 @@ layout: page
 
         $('.entry a').each(function(index,element){
             var href = element.attr('href');
+		alert(href);
+		alert(element);
             if(href){
                 if(href.indexOf('#') == 0){
                 }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('www.zhengyangyang.cn')>-1 ){
