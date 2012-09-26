@@ -4,24 +4,24 @@ title: Life
 ---
 <div class="lifefall">
     <ul id="lifecontent">
-    {% for life in site.categories.life %}
-	{% if life.type == 'article' %}
+    {% for drip in site.categories.life.post %}
+	{% if drip.type == 'article' %}
         	<li class="article post" >
-                	<a href="{{ life.url }}" class="link">
+                	<a href="{{ drip.url }}" class="link">
 			    <span class="text">
-				<strong>{{ life.title }}</strong>
-				<em>{{ life.description }}</em>
+				<strong>{{ drip.title }}</strong>
+				<em>{{ drip.description }}</em>
 			    </span>
 			</a>
             	</li>
 	{% else %}
 		<li class="photo post">
-			<a href="{{ life.url }}" class="link">
+			<a href="{{ drip.url }}" class="link">
 			    <span class="img">
-				<img src="/images/life/{{ life.type.image }}">
+				<img src="/images/life/{{ drip.type.image }}">
 				<span class="arr"><span></span></span>
 				<span class="text">
-				    <em>{{ life.description  }}</em>
+				    <em>{{ drip.description  }}</em>
 				</span>
 			    </span>
 			</a>
