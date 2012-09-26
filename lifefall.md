@@ -6,7 +6,7 @@ title: Life
     <ul id="lifecontent">
     {% assign water = site.categories.life %}
     {% for drip in water %}
-	{% if drip.type == 'article' %}
+	{% if drip.driptype == 'article' %}
         	<li class="article post" >
                 	<a href="{{ drip.url }}" class="link">
 			    <span class="text">
