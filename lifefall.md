@@ -5,6 +5,7 @@ title: Life
 <div class="lifefall">
     <ul id="lifecontent">
     {% assign water = site.categories.life %}
+	{{ site.categories.life.length  }}-{{ site.categories.length  }}
     {% for drip in water %}
 	{% if drip.driptype == 'article' %}
         	<li class="article post" >
@@ -33,7 +34,7 @@ title: Life
 </div>
 <script type="text/javascript">
 
-	YONZEO.includeScript('/js/jquery.masonry.min..js',function(){});
+	YONZEO.includeScript('/js/jquery.masonry.min.js',function(){});
 	$(document).ready(function(){
    	    $('#lifecontent').masonry({
     		itemSelector : '.post',
