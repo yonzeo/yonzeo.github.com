@@ -4,8 +4,8 @@ title: Life
 ---
 <div class="lifefall">
     <ul id="lifecontent">
-    {% assign water = site.categories.life.last %}
-	{{ site.categories.life.length  }}-{{ site.categories.length  }}
+    {% assign water = site.categories.life %}
+	{{ site.categories.life.size  }}-{{ site.categories.size  }}
     {% for drip in water %}
 	{% if drip.driptype == 'article' %}
         	<li class="article post" >
