@@ -1,6 +1,7 @@
 var margin = 10;
 var li = $('li');
 var li_W = li[0].offsetWidth + margin;
+document.write(li[0].offsetWidth);
 function liuxiaofan(){
     var h = [];
     var n = document.documentElement.offsetWidth / li_W | 0;
