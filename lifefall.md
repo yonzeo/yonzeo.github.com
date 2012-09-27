@@ -12,7 +12,7 @@ layout: nil
 li{list-style:none;}
 h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:100%;}
 em,strong{font-weight:bold;font-style:normal;}
-##body,textarea,select,input{font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
+body,textarea,select,input{font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
 a{text-decoration:none;color:#888;}
 a:hover{text-decoration:none;color:#7594B3;}
 
