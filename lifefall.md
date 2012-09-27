@@ -5,7 +5,7 @@ layout: nil
 <head>
 <title>sss</title>
 <script type='text/javascript' src='/js/jquery-1.7.1.min.js'> </script>
-<script type='text/javascript' src='/js/jquery.infinitescroll.min.js'> </script>
+<script type='text/javascript' src='/js/jquery.masonry.min.js'> </script>
 </head>
 <body>
 <ul id="lxf-box">
