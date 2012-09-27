@@ -50,10 +50,10 @@ a.c1:hover,.c1 a:hover{color:#000;}
 			    <span class="img">
 				<img src="/images/life/{{ drip.image }}">
 				<span class="arr"><span></span></span>
-				<span class="text">
-				    <em>{{ drip.description  }}</em>
-				</span>
 			    </span>
+			    <span class="text">
+                                <em>{{ drip.description  }}</em>
+                            </span>
 			</a>
 		</li>    
 	{% endif %}
