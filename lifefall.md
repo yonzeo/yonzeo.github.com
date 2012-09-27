@@ -49,7 +49,7 @@ a.c1:hover,.c1 a:hover{color:#000;}
 			<a href="{{ drip.url }}" class="link">
 			    <span class="img">
 				<img src="/images/life/{{ drip.image }}">
-				<span class="arr"><span></span></span>
+				<span class="arr"><span> </span> </span>
 			    </span>
 			    <span class="text">
                                 <em>{{ drip.description  }}</em>
