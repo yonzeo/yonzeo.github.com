@@ -59,6 +59,14 @@ layout: nil
 var margin = 10;
 var li=$("li");
 var li_W = li[0].offsetWidth+margin;
+
+function getarraykey(s, v){
+    for(k in s){
+        if(s[k] == v){
+            return k;
+        }
+    }
+}
 </script>
 </body>
 </html>
