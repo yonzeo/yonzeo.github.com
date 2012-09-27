@@ -4,9 +4,7 @@ title: Life
 ---
 <div class="lifefall">
     <ul id="lifecontent">
-    {% assign water = site.categories.life %}
-	{{ site.categories.life.size  }}-{{ site.categories.size  }}
-    {% for drip in water %}
+    {% for drip in site.categories.life %}
 	{% if drip.driptype == 'article' %}
         	<li class="article post" >
                 	<a href="{{ drip.url }}" class="link">
@@ -20,7 +18,7 @@ title: Life
 		<li class="photo post">
 			<a href="{{ drip.url }}" class="link">
 			    <span class="img">
-				<img src="/images/life/{{ drip.type.image }}">
+				<img src="/images/life/{{ drip.image }}">
 				<span class="arr"><span></span></span>
 				<span class="text">
 				    <em>{{ drip.description  }}</em>
