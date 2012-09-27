@@ -56,6 +56,9 @@ layout: nil
         </li>
 </ul>
 <script>
+var margin = 10;
+var li=$("li");
+var li_W = li[0].offsetWidth+margin;
 </script>
 </body>
 </html>
