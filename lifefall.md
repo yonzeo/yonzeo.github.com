@@ -64,7 +64,7 @@ function liuxiaofan(){
     var h = [];
     var n = document.documentElement.offsetWidth / li_W | 0;
 	li_H = li[i].offsetHeight;
-        if(i < n){
+        if(i){
             h[i] = li_H;
             li.eq(i).css("top",0);
             li.eq(i).css("left",i * li_W);
