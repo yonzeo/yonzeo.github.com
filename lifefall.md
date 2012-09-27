@@ -62,7 +62,6 @@ var li_W = li[0].offsetWidth+margin;
 
 function liuxiaofan(){
     var h = [];
-    var n = document.documentElement.offsetWidth / li_W | 0;
     for (var i =0; i<li.length; i++){
     }
 }
