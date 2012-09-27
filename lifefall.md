@@ -55,16 +55,17 @@ layout: nil
             <h3></h3>
         </li>
 </ul>
-<script>
+<script type='text/javascript' >
 var margin = 10;
 var li=$("li");
 var li_W = li[0].offsetWidth+margin;
 
 function liuxiaofan(){
     var h = [];
-    var n = document.documentElement.offsetWidth/li_W|0;
-    for(var i=0; i < li.length;i++){
-	
+    var n = document.documentElement.offsetWidth / li_W | 0;
+    for(var i=0; i < li.length;i++)
+    {
+		
     }
 }
 
