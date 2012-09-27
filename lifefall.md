@@ -16,17 +16,6 @@ layout: nil
             });
         });
 </script>
-<style type="text/css">
-/* 背景色和背景图 */
-body{background-color:#fff;background-image:url(http://www.niumowang.org/demo/infinite/images/bg.png);background-repeat:repeat;}
-/* 侧栏：文字色和分割线颜色 */
-.b1{border-color:#96999D;}
-.c1,.c1 a{color:#96999D;}
-/* 侧栏：文字色hover色 */
-a.c1:hover,.c1 a:hover{color:#000;}
-/* 侧栏：博客名称色和hover色 */
-.c2,a.c2:hover{color:#444;}
-</style>
 </head>
 <body>
 <!-- 内容 -->
