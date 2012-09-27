@@ -62,8 +62,6 @@ var li_W = li[0].offsetWidth+margin;
 
 function liuxiaofan(){
     var h = [];
-    for (var i =0; i<li.length; i++){
-    }
 }
 
 function getarraykey(s, v){
