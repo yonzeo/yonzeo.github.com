@@ -30,7 +30,7 @@ a.c1:hover,.c1 a:hover{color:#000;}
 </head>
 <body>
 <!-- 内容 -->
-<div class="body">
+<div class="body clear">
 	<div class="list">
 
     <ul id="lifecontent">
