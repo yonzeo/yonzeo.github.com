@@ -4,6 +4,7 @@ layout: nil
 <html>
 <head>
 <title>sss</title>
+<script type='text/javascript' src='/js/jquery-1.7.1.min.js'> </script>
 </head>
 <body>
 <ul id="lxf-box">
