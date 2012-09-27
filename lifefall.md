@@ -5,42 +5,43 @@ layout: nil
 <head>
 <title>sss</title>
 <script type='text/javascript' src='/js/jquery-1.7.1.min.js'> </script>
+<script type='text/javascript' src='/js/jquery.infinitescroll.min.js'> </script>
 </head>
 <body>
 <ul id="lxf-box">
-    <li>
+    <li class='post'>
 	<a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
 	<h3></h3>
     </li>
-    <li>
+    <li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-    <li>
+    <li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-    <li>
+    <li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-    <li>
+    <li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-<li>
+<li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-<li>
+<li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-<li>
+<li class='post' >
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
-<li>
+<li class='post'>
         <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
         <h3></h3>
     </li>
@@ -53,6 +54,11 @@ layout: nil
     img { width: 200px; height: auto; display: block; border: 0}
     li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
-<script type='text/javascript' src='/fall.js'> </script>
+<script type='text/javascript'>
+	$('#lxf-box').masonry({
+    		itemSelector : '.post',
+    	columnWidth : 222
+  });
+</script>
 </body>
 </html>
