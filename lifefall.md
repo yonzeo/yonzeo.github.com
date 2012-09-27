@@ -1,91 +1,146 @@
 ---
 layout: nil
 ---
+<!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>demo</title>
-<style>
-*{padding:0;margin:0;}
-##fieldset,img,html,body,iframe{border:0;}
-##table{border-collapse:collapse;border-spacing:0;}
-li{list-style:none;}
-h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:100%;}
-em,strong{font-weight:bold;font-style:normal;}
-body,textarea,select,input{font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
-a{text-decoration:none;color:#888;}
-a:hover{text-decoration:none;color:#7594B3;}
-
-.clear:after{clear:both;display:block;visibility:hidden;height:0;overflow:hidden;content:".";}
-.clear{zoom:1;}
-
-.arr,.arr span,.page a{background:url(/images/life/abg.png) no-repeat 999px 999px;}
-.img{background:url(http://www.niumowang.org/demo/infinite/images/imgbg.png) no-repeat 999px 999px;}
-
-.list li,.block{box-shadow:0 2px 3px -2px rgba(0,0,0,0.3);-webkit-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3);-o-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3);*border:1px solid #ededed;*border-width:0 1px 1px;*border-bottom-color:#e0e0e0;}
-.list li:hover{box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-webkit-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-moz-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-o-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);}
-
-.body{margin:0 0 0 218px;padding:30px 0 0;}
-
-.list{overflow:hidden;zoom:1;}
-.list ul{margin:-21px 0 0 -21px;padding:1px 2px 3px;position:relative;}
-.list li,.link{float:left;width:230px;overflow:hidden;}
-.list .post{width:230px;margin:21px 0 0 21px;float: left;}
-.link{position:relative;display:block;background:#fff;cursor:pointer;}
-.img{display:block;position:relative;width:100%;height:170px;overflow:hidden;cursor:pointer;}
-.img img{display:block;width:115%;}
-.arr{position:absolute;top:0;left:0;width:100%;height:100%;background-position:999px 999px;}
-.arr span{position:absolute;right:18px;bottom:0;width:16px;height:8px;overflow:hidden;background-position:0 0;cursor:pointer;}
-.text{display:block;width:200px;overflow:hidden;margin:15px auto 10px;line-height:21px;color:#aaa;cursor:pointer;word-wrap:break-word;word-break:break-all;}
-.text strong,.text em{display:block;font-weight:normal;}
-.text em img{width:115%;}
-.text strong{margin:0 0 4px;color:#606060;}
-.link:hover .text strong{color:#333;}
-.link:hover .text em{color:#999}
+<meta charset="utf-8">
+<title>Jq</title>
+<style type="text/css">
+body, ul, li, h3 { margin: 0; padding: 0; list-style: none; font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
+/*瀑布流布局样式*/
+#lxf-box { position: relative; }
+#lxf-box li { position: absolute; background: #fff; border: solid 1px #ccc; text-align: center; padding: 10px; left: 0px; top: 0; }
+h3 { padding-top: 8px; }
+img { width: 200px; height: auto; display: block; border: 0 }
+/*css3动画*/
+li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
-<script type="text/javascript" src="/js/jquery-1.7.1.min.js"> </script>
-<script type="text/javascript" src="/js/jquery.masonry.min.js"> </script>
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('#lifecontent').masonry({
-                itemSelector : '.post',
-                columnWidth : 251
-            });
-        });
-</script>
+<script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 </head>
 <body>
-<!-- 内容 -->
-<div class="body clear">
-	<div class="list">
-
-    <ul id="lifecontent">
-    {% for drip in site.categories.life %}
-	{% if drip.driptype == 'article' %}
-        	<li class="article post" >
-                	<a href="{{ drip.url }}" class="link">
-			    <span class="text">
-				<strong>{{ drip.title }}</strong>
-				<em>{{ drip.description }}</em>
-			    </span>
-			</a>
-            	</li>
-	{% else %}
-		<li class="photo post">
-			<a href="{{ drip.url }}" class="link">
-			    <span class="img">
-				<img src="/images/life/{{ drip.image }}">
-				<span class="arr"><span> </span> </span>
-			    </span>
-			    <span class="text">
-                                <em>{{ drip.description  }}</em>
-                            </span>
-			</a>
-		</li>    
-	{% endif %}
-    {% endfor %}
-    </ul>
-</div>
-</div>
+<ul id="lxf-box">
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/msbvKWyQQzZuZy.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/WbWXwqpcxqcued.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/rabGVkIGq.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/rSmEiZGlAvvuZ.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/YewRtz.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/STVDndiZsIduZyLv.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/mWFuVrzCzpPdzdje.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/MsZvAyOFukxdzdjefXwi.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/OEycuedk.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/YwabRquVKrxd.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/+nwbuJpc.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/qymffF.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/DvKZdxCjtfqMv.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/SOmyOQZtlUfdzdjefXwi.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/REsUNXUvAkrdzdj.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/DQJwrFnDpgtdz.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/eJupzWlGPxz.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/IWpjipjp.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/OXsDgKacJeTdzdjefXwi.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/QPIzxiMkmlHdzdjefX.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/mrTNaJTaQyluZyLvvnWS.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/mqXLNuWiPrbdz.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/MiEJRJdimxPdzdjefXw.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/CczowVxqM.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/rabGVkIGq.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+  <li><a href="http://www.liuxiaofan.com/"><img src="http://www.liuxiaofan.com/demo/waterfall/zwPqjasxHYvdz.jpg"></a>
+    <h3>图片标题</h3>
+  </li>
+</ul>
+<script>
+/*
+原理：1.把所有的li的高度值放到数组里面
+     2.第一行的top都为0
+	 3.计算高度值最小的值是哪个li
+	 4.把接下来的li放到那个li的下面
+作者：刘晓帆
+博客地址：[url]http://liuxiaofan.com[/url]
+编写时间：2012年6月9日
+*/
+var margin = 10;//这里设置间距
+var li=$("li");//这里是区块名称
+var	li_W = li[0].offsetWidth+margin;//取区块的实际宽度（包含间距，这里使用源生的offsetWidth函数，不适用jQuery的width()函数是因为它不能取得实际宽度，例如元素内有pandding就不行了）
+function liuxiaofan(){//定义成函数便于调用
+	var h=[];//记录区块高度的数组
+	var n = document.documentElement.offsetWidth/li_W|0;//窗口的宽度除以区块宽度就是一行能放几个区块
+	for(var i = 0;i < li.length;i++) {//有多少个li就循环多少次
+		li_H = li[i].offsetHeight;//获取每个li的高度
+		if(i < n) {//n是一行最多的li，所以小于n就是第一行了
+			h[i]=li_H;//把每个li放到数组里面
+			li.eq(i).css("top",0);//第一行的Li的top值为0
+			li.eq(i).css("left",i * li_W);//第i个li的左坐标就是i*li的宽度
+			}
+		else{
+			min_H =Math.min.apply(null,h) ;//取得数组中的最小值，区块中高度值最小的那个
+			minKey = getarraykey(h, min_H);//最小的值对应的指针
+			h[minKey] += li_H+margin ;//加上新高度后更新高度值
+			li.eq(i).css("top",min_H+margin);//先得到高度最小的Li，然后把接下来的li放到它的下面
+			li.eq(i).css("left",minKey * li_W);	//第i个li的左坐标就是i*li的宽度
+		}
+		$("h3").eq(i).text("编号："+i+"，高度："+li_H);//把区块的序号和它的高度值写入对应的区块H3标题里面
+	}
+}
+/* 使用for in运算返回数组中某一值的对应项数(比如算出最小的高度值是数组里面的第几个) */
+function getarraykey(s, v) {for(k in s) {if(s[k] == v) {return k;}}}
+/*这里一定要用onload，因为图片不加载完就不知道高度值*/
+window.onload = function() {liuxiaofan();};
+/*浏览器窗口改变时也运行函数*/
+window.onresize = function() {liuxiaofan();};
+</script>
 </body>
 </html>
