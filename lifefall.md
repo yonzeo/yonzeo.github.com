@@ -19,7 +19,7 @@ title: Life
 .text strong{margin:0 0 4px;color:#606060;}
 .link:hover .text strong{color:#333;}
 .link:hover .text em{color:#999}
-<style>
+</style>
 <div class="lifefall">
     <ul id="lifecontent">
     {% for drip in site.categories.life %}
