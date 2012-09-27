@@ -7,6 +7,15 @@ layout: nil
 <title>demo</title>
 <link href="http://www.niumowang.org/demo/infinite/style.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#lifecontent').masonry({
+                itemSelector : '.post',
+                columnWidth : 251
+            });
+        });
+</script>
 <style type="text/css">
 /* 背景色和背景图 */
 body{background-color:#fff;background-image:url(http://www.niumowang.org/demo/infinite/images/bg.png);background-repeat:repeat;}
@@ -52,38 +61,5 @@ a.c1:hover,.c1 a:hover{color:#000;}
     </ul>
 </div>
 </div>
-    <script type="text/javascript">
-        var YONZEO = {};
-        YONZEO.includeScript = function(file,callback){
-            var _doc = document.getElementsByTagName('head')[0];
-            var js = document.createElement('script');
-            js.setAttribute('type', 'text/javascript');
-            js.setAttribute('src', file);
-            _doc.appendChild(js);
-
-            if (!/*@cc_on!@*/0) { //if not IE
-                //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
-                js.onload = function () {
-                    callback();
-                }
-            } else {
-                //IE6、IE7 support js.onreadystatechange
-                js.onreadystatechange = function () {
-                    if (js.readyState == 'loaded' || js.readyState == 'complete') {
-                        callback();
-                    }
-                }
-            }
-            return false;
-        }
-
-	YONZEO.includeScript('/js/jquery.masonry.min.js',function(){});
-	$(document).ready(function(){
-   	    $('#lifecontent').masonry({
-    		itemSelector : '.post',
-    		columnWidth : 251
-  	    });
-	});
-</script>
 </body>
 </html>
