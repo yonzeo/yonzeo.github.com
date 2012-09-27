@@ -55,10 +55,12 @@ layout: nil
     li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
 <script type='text/javascript'>
+$(function(){
 	$('#lxf-box').masonry({
     		itemSelector : '.post',
     	columnWidth : 222
   });
+});
 </script>
 </body>
 </html>
