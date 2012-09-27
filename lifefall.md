@@ -1,26 +1,29 @@
 ---
-layout: page
-title: Life
+layout: nil
 ---
-<style>
-.list li:hover{box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-webkit-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-moz-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-o-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);}
-.list{overflow:hidden;zoom:1;}
-.list ul{margin:-21px 0 0 -21px;padding:1px 2px 3px;position:relative;}
-.list li,.link{float:left;width:230px;overflow:hidden;}
-.list .post{width:230px;margin:21px 0 0 21px;float: left;}
-.link{position:relative;display:block;background:#fff;cursor:pointer;}
-.img{display:block;position:relative;width:100%;height:170px;overflow:hidden;cursor:pointer;}
-.img img{display:block;width:115%;}
-.arr{position:absolute;top:0;left:0;width:100%;height:100%;background-position:999px 999px;}
-.arr span{position:absolute;right:18px;bottom:0;width:16px;height:8px;overflow:hidden;background-position:0 0;cursor:pointer;}
-.text{display:block;width:200px;overflow:hidden;margin:15px auto 10px;line-height:21px;color:#aaa;cursor:pointer;word-wrap:break-word;word-break:break-all;}
-.text strong,.text em{display:block;font-weight:normal;}
-.text em img{width:115%;}
-.text strong{margin:0 0 4px;color:#606060;}
-.link:hover .text strong{color:#333;}
-.link:hover .text em{color:#999}
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>demo</title>
+<link href="http://www.niumowang.org/demo/infinite/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<style type="text/css">
+/* 背景色和背景图 */
+body{background-color:#fff;background-image:url(images/bg.png);background-repeat:repeat;}
+/* 侧栏：文字色和分割线颜色 */
+.b1{border-color:#96999D;}
+.c1,.c1 a{color:#96999D;}
+/* 侧栏：文字色hover色 */
+a.c1:hover,.c1 a:hover{color:#000;}
+/* 侧栏：博客名称色和hover色 */
+.c2,a.c2:hover{color:#444;}
 </style>
-<div class="lifefall">
+</head>
+<body>
+<!-- 内容 -->
+<div class="body clear">
+	<div class="list">
+
     <ul id="lifecontent">
     {% for drip in site.categories.life %}
 	{% if drip.driptype == 'article' %}
@@ -48,6 +51,32 @@ title: Life
     {% endfor %}
     </ul>
 </div>
+</div>
+    <script type="text/javascript">
+        var YONZEO = {};
+        YONZEO.includeScript = function(file,callback){
+            var _doc = document.getElementsByTagName('head')[0];
+            var js = document.createElement('script');
+            js.setAttribute('type', 'text/javascript');
+            js.setAttribute('src', file);
+            _doc.appendChild(js);
+
+            if (!/*@cc_on!@*/0) { //if not IE
+                //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+                js.onload = function () {
+                    callback();
+                }
+            } else {
+                //IE6、IE7 support js.onreadystatechange
+                js.onreadystatechange = function () {
+                    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+                        callback();
+                    }
+                }
+            }
+            return false;
+        }
+    </script>
 <script type="text/javascript">
 
 	YONZEO.includeScript('/js/jquery.masonry.min.js',function(){});
