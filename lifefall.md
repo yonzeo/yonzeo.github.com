@@ -85,8 +85,6 @@ layout: nil
                     }
                 }
         }
-        window.onload = function(){liuxiaofan();}
-        window.onresize = function(){liuxiaofan();}
 </script>
 </body>
 </html>
