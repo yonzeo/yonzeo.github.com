@@ -55,7 +55,7 @@ layout: nil
             <h3></h3>
         </li>
 </ul>
-<script type="text/javascript">
+<script>
         var margin = 10;
         var li=$("li");
         var li_W = li[0].offsetWidth+margin;
@@ -85,8 +85,8 @@ layout: nil
                     }
                 }
         }
-        window.onload = function() {liuxiaofan();};
-        window.onresize = function() {liuxiaofan();}
+        window.onload = function(){liuxiaofan();}
+        window.onresize = function(){liuxiaofan();}
 </script>
 </body>
 </html>
