@@ -32,8 +32,8 @@ a:hover{text-decoration:none;color:#7594B3;}
 .list li,.link{float:left;width:230px;overflow:hidden;}
 .list .post{width:230px;margin:21px 0 0 21px;float: left;}
 .link{position:relative;display:block;background:#fff;cursor:pointer;}
-.img{display:block;position:relative;width:100%;height:170px;overflow:hidden;cursor:pointer;}
-.img img{display:block;width:115%;}
+.img{display:block;position:relative;width:100%;overflow:hidden;cursor:pointer;}
+.img img{display:block;width:100%;}
 .arr{position:absolute;top:0;left:0;width:100%;height:100%;background-position:999px 999px;}
 .arr span{position:absolute;right:18px;bottom:0;width:16px;height:8px;overflow:hidden;background-position:0 0;cursor:pointer;}
 .text{display:block;width:200px;overflow:hidden;margin:15px auto 10px;line-height:21px;color:#aaa;cursor:pointer;word-wrap:break-word;word-break:break-all;}
