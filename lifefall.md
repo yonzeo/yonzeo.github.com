@@ -76,8 +76,6 @@ a.c1:hover,.c1 a:hover{color:#000;}
             }
             return false;
         }
-    </script>
-<script type="text/javascript">
 
 	YONZEO.includeScript('/js/jquery.masonry.min.js',function(){});
 	$(document).ready(function(){
