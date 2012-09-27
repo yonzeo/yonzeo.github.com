@@ -6,8 +6,6 @@ layout: nil
 <head>
 </head>
 <body>
-<ul id="lxf-box">
-</ul>
 <script type='text/javascript'>
 var margin = 10;
 var li = $('li');
