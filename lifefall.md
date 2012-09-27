@@ -48,7 +48,7 @@ layout: nil
     </div>
 </div>
 <style type="text/css">
-    #lxf-box {
+#lxf-box {
   background: #FFF;
   padding: 5px;
   margin-bottom: 20px;
@@ -58,6 +58,7 @@ layout: nil
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
+
 .post {
   margin: 5px;
   padding: 5px;
@@ -69,10 +70,12 @@ layout: nil
      -moz-border-radius: 5px;
           border-radius: 5px;
 }
-.post img{
+
+.box img{
   display: block;
   width: 100%;
-}	
+}
+
  /**   body,ul,li,h3 { margin: 0px; padding: 0px; list-style: none; font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
     #lxf-box { position: relative; }
     #lxf-box li { position: absolute; background: #fff; border: solid 1px #ccc; text-align: center; padding: 10px; left: 0px; top: 0px;}
