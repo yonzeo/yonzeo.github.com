@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: page
 ---
 <ul id="lxf-box">
     <li>
