@@ -5,9 +5,9 @@ layout: nil
 <html>
 <head>
 <meta charset="utf-8">
-<title>Jq</title>
+<title>Jquery瀑布流布局（每行代码都有详细注释）-作者：刘晓帆</title>
 <style type="text/css">
-body, ul, li, h3 { margin: 0; padding: 0; list-style: none; font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
+body, ul, li, h3 { margin: 0; padding: 0; list-style: none; font: bold 12px "微软雅黑"; }
 /*瀑布流布局样式*/
 #lxf-box { position: relative; }
 #lxf-box li { position: absolute; background: #fff; border: solid 1px #ccc; text-align: center; padding: 10px; left: 0px; top: 0; }
@@ -16,7 +16,7 @@ img { width: 200px; height: auto; display: block; border: 0 }
 /*css3动画*/
 li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
-<script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="http://liuxiaofan.com/demo/js/jquery-1.6.4.min.js" type="text/javascript"></script>
 </head>
 <body>
 <ul id="lxf-box">
