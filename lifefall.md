@@ -47,6 +47,7 @@ layout: nil
     </div>
 </div>
 <style type="text/css">
+* {vertical-align: baseline;}
 #lxf-box {
   background: #FFF;
   padding: 5px;
