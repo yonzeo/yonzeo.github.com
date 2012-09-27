@@ -47,36 +47,7 @@ layout: nil
         <h3></h3>
     </div>
 </div>
-<style type="text/css">
-#lxf-box {
-  background: #FFF;
-  padding: 5px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  clear: both;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-}
-
-.post {
-  margin: 5px;
-  padding: 5px;
-  background: #D8D5D2;
-  font-size: 11px;
-  line-height: 1.4em;
-  float: left;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-}
-
-.box img{
-  display: block;
-  width: 100%;
-}
-
-</style>
+<style type="text/css"></style>
 <script type='text/javascript'>
 $(function(){
 	$('#lxf-box').masonry({
