@@ -47,7 +47,7 @@ layout: page
     img { width: 200px; height: auto; display: block; border: 0}
     li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
-<script>
+<script><!--
 var margin = 10;
 var li = $('li');
 var li_W = li[0].offsetWidth + margin;
@@ -79,5 +79,5 @@ function getarraykey(s, v){
     }
 }
 window.onload = function(){liuxiaofan();};
-window.onresize = function(){liuxiaofan();};
+window.onresize = function(){liuxiaofan();}; -->
 </script>
