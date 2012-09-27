@@ -7,9 +7,6 @@ layout: nil
 </head>
 <body>
 <script type='text/javascript'>
-var margin = 10;
-var li = $('li');
-var li_W = li[0].offsetWidth + margin;
 
 function liuxiaofan(){
     var h = [];
