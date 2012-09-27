@@ -60,6 +60,14 @@ var margin = 10;
 var li=$("li");
 var li_W = li[0].offsetWidth+margin;
 
+function liuxiaofan(){
+    var h = [];
+    var n = document.documentElement.offsetWidth/li_W|0;
+    for(var i =0; i<li.length; i++){
+        li_H = li[i].offsetHeight;
+    }
+}
+
 function getarraykey(s, v){
     for(k in s){
         if(s[k] == v){
