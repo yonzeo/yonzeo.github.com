@@ -6,7 +6,7 @@ layout: nil
 <head>
 </head>
 <body>
-<script type='text/javascript'>
+<script>
 
 function liuxiaofan(){
     var h = [];
