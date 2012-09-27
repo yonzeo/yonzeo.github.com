@@ -7,42 +7,6 @@ layout: nil
 </head>
 <body>
 <ul id="lxf-box">
-	<li>
-	    <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-	    <h3></h3>	
-	</li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
-	<li>
-            <a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
-            <h3></h3>
-        </li>
 </ul>
 <script type='text/javascript'>
 var margin = 10;
