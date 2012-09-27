@@ -6,8 +6,8 @@ layout: nil
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>demo</title>
 <link href="http://www.niumowang.org/demo/infinite/style.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="/js/jquery-1.7.1.min.js"> </script>
-<script type="text/javascript" src="/js/jquery.masonry.min.js"> </script>
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.masonry.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function(){
             $('#lifecontent').masonry({
