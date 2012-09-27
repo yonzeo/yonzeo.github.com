@@ -52,7 +52,7 @@ layout: nil
     #lxf-box li { position: absolute; background: #fff; border: solid 1px #ccc; text-align: center; padding: 10px; left: 0px; top: 0px;}
     h3 { padding-top: 8px;}
     img { width: 200px; height: auto; display: block; border: 0}
-    li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
+ /**   li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s } **/
 </style>
 <script type='text/javascript'>
 $(function(){
