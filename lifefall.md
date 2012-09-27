@@ -9,7 +9,7 @@ layout: nil
 <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
 <style type="text/css">
 /* 背景色和背景图 */
-body{background-color:#fff;background-image:url(images/bg.png);background-repeat:repeat;}
+body{background-color:#fff;background-image:url(http://www.niumowang.org/demo/infinite/images/bg.png);background-repeat:repeat;}
 /* 侧栏：文字色和分割线颜色 */
 .b1{border-color:#96999D;}
 .c1,.c1 a{color:#96999D;}
@@ -21,7 +21,7 @@ a.c1:hover,.c1 a:hover{color:#000;}
 </head>
 <body>
 <!-- 内容 -->
-<div class="body clear">
+<div class="body">
 	<div class="list">
 
     <ul id="lifecontent">
