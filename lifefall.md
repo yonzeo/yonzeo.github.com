@@ -1,6 +1,11 @@
 ---
-layout: page
+layout: nil
 ---
+<html>
+<head>
+<title>sss</title>
+</head>
+<body>
 <ul id="lxf-box">
     <li>
 	<a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
@@ -48,3 +53,5 @@ layout: page
     li { -webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s }
 </style>
 <script type='text/javascript' src='/fall.js'> </script>
+</body>
+</html>
