@@ -6,7 +6,7 @@ layout: nil
     <meta charset="utf-8" />
     <title>s</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"> </script>
     <style type="text/css">
     	body,ul,li,h3 { margin: 0px; padding: 0px; list-style: none; font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
     	#lxf-box { position: relative; }
