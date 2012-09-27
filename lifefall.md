@@ -8,7 +8,6 @@ layout: nil
 <script type='text/javascript' src='/js/jquery.masonry.min.js'> </script>
 </head>
 <body>
-<!--
 <div id="lxf-box">
     <div class='post'>
 	<a href="#"><img src="http://www.liuxiaofan.com/demo/waterfall/OLqypfV.jpg"></a>
