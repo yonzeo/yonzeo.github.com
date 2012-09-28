@@ -1,10 +1,9 @@
 var margin = 10;
 var li = $('li');
-var li_W = $(li[0]).outerWidth() + margin*3;
-document.write($(li[0]).outerWidth(true));
-document.write(' ' + $(li[0]).outerHeight(true));
 function liuxiaofan(){
     var h = [];
+    var li_W = $(li[0]).outerWidth() + margin*3;
+    document.write($(li[0]).outerWidth(true));document.write(' ' + $(li[0]).outerHeight(true));
     var n = document.documentElement.offsetWidth / li_W | 0;
     for(var i = 0; i < li.length; i++ ){
         li_H = $(li[i]).outerHeight();
