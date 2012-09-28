@@ -1,6 +1,6 @@
 var margin = 10;
 var li = $('li');
-var li_W = $(li[0]).outerWidth() + margin;
+var li_W = $(li[0]).outerWidth() + margin*3;
 
 function liuxiaofan(){
     var h = [];
