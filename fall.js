@@ -2,11 +2,12 @@ var margin = 10;
 var li = $('li');
 var li_W = $(li[0]).outerWidth() + margin;
 document.write($(li[0]).outerWidth());
+document.write(' ' + $(li[0]).outerHeight());
 function liuxiaofan(){
     var h = [];
     var n = document.documentElement.offsetWidth / li_W | 0;
     for(var i = 0; i < li.length; i++ ){
-        li_H = $(li[i]).innerHeight();
+        li_H = $(li[i]).outerHeight();
         if( i < n ) {
             h[i] = li_H;
             li.eq(i).css("top",0);
