@@ -8,7 +8,7 @@ type: article | photo   生活日志是文章还是图片的
 ---
 
 # [{{ page.title }}][1]
-{{post.date | date_to_string}} By {{ site.author_info }}
+{{post.date}} By {{ site.author_info }}
 
 
 
